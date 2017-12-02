@@ -56,14 +56,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClubModel\AdminRoles.cs" />
     <Compile Include="ClubModel\Club.cs" />
     <Compile Include="ClubModel\ClubContext.cs" />
     <Compile Include="ClubModel\ClubEvent.cs" />
+    <Compile Include="ClubModel\Course.cs" />
+    <Compile Include="ClubModel\CourseData.cs" />
     <Compile Include="ClubModel\Members.cs" />
     <Compile Include="ClubModel\Student.cs" />
     <Compile Include="Migrations\201711231802374_Initial Clubs.cs" />
     <Compile Include="Migrations\201711231802374_Initial Clubs.Designer.cs">
       <DependentUpon>201711231802374_Initial Clubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712021310250_jk.cs" />
+    <Compile Include="Migrations\201712021310250_jk.Designer.cs">
+      <DependentUpon>201712021310250_jk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712021439134_MembersStudents.cs" />
+    <Compile Include="Migrations\201712021439134_MembersStudents.Designer.cs">
+      <DependentUpon>201712021439134_MembersStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712021451430_courseandstudentsadded.cs" />
+    <Compile Include="Migrations\201712021451430_courseandstudentsadded.Designer.cs">
+      <DependentUpon>201712021451430_courseandstudentsadded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712021455179_all.cs" />
+    <Compile Include="Migrations\201712021455179_all.Designer.cs">
+      <DependentUpon>201712021455179_all.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -71,6 +90,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EmbeddedResource Include="Migrations\201712021310250_jk.resx">
+      <DependentUpon>201712021310250_jk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712021439134_MembersStudents.resx">
+      <DependentUpon>201712021439134_MembersStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712021451430_courseandstudentsadded.resx">
+      <DependentUpon>201712021451430_courseandstudentsadded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712021455179_all.resx">
+      <DependentUpon>201712021455179_all.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Courses.csv" />
     <None Include="packages.config" />
     <EmbeddedResource Include="Migrations\TestStudents.csv" />
   </ItemGroup>

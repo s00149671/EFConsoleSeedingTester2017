@@ -21,7 +21,7 @@ namespace ClubModel
         public virtual Club associatedClub { get; set; }
         public DateTime StartDateTime { get; set; }
         public DateTime EndDateTime { get; set; }
-        //public virtual ICollection<Member> attendees { get; set; }
+        public virtual ICollection<Member> attendees { get; set; }
 
     }
 }
