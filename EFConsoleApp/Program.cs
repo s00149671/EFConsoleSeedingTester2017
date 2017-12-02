@@ -22,7 +22,7 @@ namespace EFConsoleApp
         {
             using (ClubContext context = new ClubContext())
             {
-                //SeedClub(context);
+                SeedClub(context);
                 GetStudents(context);
                 getMembers(context);
                 SeedStudents(context);
